@@ -1,26 +1,13 @@
 
 
-region1State = 0;
-region2State = 0;
-region3State = 0;
-labelCircle1 = 'S';
-labelCircle2 = 'P';
-circleColor = 150;
-markingsColor = 'lightblue';
-labelsColor = 'lightblue';
-backgroundColor = 'white';
-labelsSize = 30;
-
-
-typeA = 'All ' + labelCircle1 + ' are ' + labelCircle2 + '.';
-typeE = 'No ' + labelCircle1 + ' are ' + labelCircle2 + '.';
-typeI = 'Some ' + labelCircle1 + ' are ' + labelCircle2 + '.';
-typeO = 'Some ' + labelCircle1 + ' are not ' + labelCircle2 + '.'
 
 function setup() {
+  // put setup code here
   createCanvas(360, 270);
   textAlign(CENTER, CENTER);
+}
 
+// Change mouse cursor to hand when mousing over Venn regions
 function changeMouseCursor() {
 	let d1 = dist(mouseX, mouseY, 120, 120);
 	let d2 = dist(mouseX, mouseY, 240, 120);
