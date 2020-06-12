@@ -1,6 +1,6 @@
-let width = 500, height = 300;
+
 function setup() {
-  createCanvas(width, height);
+  createCanvas(500, 300);
 }
 
 function draw() {
